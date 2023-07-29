@@ -6,13 +6,13 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 17:00:34 by kyoshida          #+#    #+#             */
-/*   Updated: 2023/07/25 20:22:33 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 11:12:33 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	ft_swap(t_list **stack)
+static int	ft_swap(t_list **stack)
 {
 	t_list	*now;
 	t_list	*after;

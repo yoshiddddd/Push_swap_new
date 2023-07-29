@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/16 16:32:00 by kyoshida          #+#    #+#             */
-/*   Updated: 2023/07/25 21:45:03 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 11:13:04 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,20 +45,13 @@ static int get_max_index(t_list **stack_b,int size)
 
 int push_b_to_a(t_list **stack_a , t_list **stack_b)
 {
-    // int first_max;
-    // int second_max;
     int len;
     while(*stack_b!=NULL)
     {
     len = ft_lstsize(stack_b);
-	// printf("len:%d\n",(*stack_b)->pressnum );
 		
 		if(len == (*stack_b)->pressnum )
-		{
             pa_command(stack_a,stack_b);
-			// if((*stack_a)->next!=NULL &&((*stack_a)->data > (*stack_a)->next->data))
-			// 	sa_command(stack_a);
-		}
         else if(get_max_index(stack_b,len) > len / 2)
             rrb_command(stack_b);
         else
@@ -86,8 +79,7 @@ int	big_sort(t_list **stack_a, t_list **stack_b, int size)
 			if((*stack_b)->data < mid)
 				rb_command(stack_b);
 			count++;
-		}
-		
+		}		
 		i++;
 	}
     push_b_to_a(stack_a,stack_b);

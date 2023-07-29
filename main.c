@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 15:42:33 by kyoshida          #+#    #+#             */
-/*   Updated: 2023/07/24 22:09:23 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 11:06:39 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int	main(int argc, char **argv)
 		printerror();
 		return 0;
 	}
+	
 	ft_sort(&stack_a, &stack_b);
 	lst_free(stack_a,stack_b);
 

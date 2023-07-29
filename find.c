@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 19:43:46 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2023/07/25 20:35:15 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 11:10:58 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int find_min_index(t_list **stack, int min)
     }
     return count;
 }
+
 t_list	*find_min_rotate(t_list **stack, int min)
 {
 	t_list	*tmp;
@@ -34,6 +35,7 @@ t_list	*find_min_rotate(t_list **stack, int min)
             ra_command(&tmp);
 	return (tmp);
 }
+
 int	find_min(t_list **stack)
 {
 	t_list	*tmp;

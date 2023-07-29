@@ -6,13 +6,13 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 20:28:36 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2023/07/25 20:22:05 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 11:12:01 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	ft_rev_rotate(t_list **stack)
+static int	ft_rev_rotate(t_list **stack)
 {
 	t_list	*now;
 	t_list	*flast;

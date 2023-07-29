@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 19:08:39 by kyoshida          #+#    #+#             */
-/*   Updated: 2023/07/25 20:19:35 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 11:12:38 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,19 +26,16 @@ typedef struct s_list
 }					t_list;
 
 // ---------swap-----------
-int					ft_swap(t_list **stack);
 int					sa_command(t_list **stack_a);
 int					sb_command(t_list **stack_b);
 int					ss_command(t_list **stack_a, t_list **stack_b);
 
 // ----------rotate-------------
-int					ft_rotate(t_list **stack);
 int					ra_command(t_list **stack_a);
 int					rb_command(t_list **stack_b);
 int					rr_command(t_list **stack_a, t_list **stack_b);
 
 // -----------rev_rotate------------
-int					ft_rev_rotate(t_list **stack);
 int					rra_command(t_list **stack_a);
 int					rrb_command(t_list **stack_b);
 int					rrr_command(t_list **stack_a, t_list **stack_b);
