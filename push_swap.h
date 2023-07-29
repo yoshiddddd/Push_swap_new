@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 19:08:39 by kyoshida          #+#    #+#             */
-/*   Updated: 2023/07/29 11:12:38 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 11:41:35 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int 				printerror();
 int  				checklst_error(t_list **stack_a);
 void 				lst_free(t_list *stack_a, t_list *stack_b);
 int 				argv_free(char **argv,int argc);
-
+int 				issort(t_list **stack_a);
 // ----------------find------------
 int					find_min(t_list **stack);
 int					find_max(t_list **stack);

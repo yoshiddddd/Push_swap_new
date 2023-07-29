@@ -6,7 +6,7 @@
 /*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 17:17:45 by kyoshida          #+#    #+#             */
-/*   Updated: 2023/07/29 11:06:06 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 12:08:18 by yoshidakazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ static int argv_len(char **argv)
 	return i;
 	
 }
+
 static int jud_flag(int flag,int argc,char **argv)
 {
 	if(flag == 0)
@@ -56,12 +57,14 @@ static int jud_flag(int flag,int argc,char **argv)
 		return argv_free(argv,argc);
 
 }
+
 static int jud_argc(int flag,int argc, char **argv,t_list **stack)
 {
 	if (flag ==1)
 		argv_free(argv,argc);
 	if (num_press(stack) == 1)
 		return (1);
+		
 	return 0;
 }
 

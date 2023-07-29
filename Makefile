@@ -6,7 +6,7 @@
 #    By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/10 14:12:09 by kyoshida          #+#    #+#              #
-#    Updated: 2023/07/25 20:19:22 by yoshidakazu      ###   ########.fr        #
+#    Updated: 2023/07/29 11:42:51 by yoshidakazu      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,8 @@ lstadd_a.c\
 ft_atoi2.c\
 push_command.c\
 sort_min.c\
-find.c
+find.c\
+sorted_check.c
 
 OBJS :=$(SRCS:.c=.o)
 
