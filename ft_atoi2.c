@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi2.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/20 13:14:50 by kyoshida          #+#    #+#             */
-/*   Updated: 2023/07/25 20:35:23 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 15:58:56 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ static long	ft_parsenumber(const char *str, int flag)
 
 long	ft_atoi_swap(const char *str)
 {
-	int			flag;
-	long 	num;
+	int		flag;
+	long	num;
 
 	num = 0;
 	flag = 1;

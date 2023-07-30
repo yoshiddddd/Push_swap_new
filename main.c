@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/03 15:42:33 by kyoshida          #+#    #+#             */
-/*   Updated: 2023/07/29 11:41:57 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/30 15:15:13 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,22 +23,22 @@ int	main(int argc, char **argv)
 {
 	t_list	*stack_a;
 	t_list	*stack_b;
+
 	stack_a = (t_list *)malloc(sizeof(t_list));
-	stack_b =NULL;
+	stack_b = NULL;
 	if (stack_a == NULL)
 		return (0);
 	lst_set(&stack_a);
-	if (lstadd_a(&stack_a, argc, argv) == 1||checklst_error(&stack_a) == 1 )
+	if (lstadd_a(&stack_a, argc, argv) == 1 || checklst_error(&stack_a) == 1)
 	{
-		lst_free(stack_a,stack_b);
+		lst_free(stack_a, stack_b);
 		printerror();
-		return 0;
+		return (0);
 	}
-	if(issort(&stack_a) == 1)
-		return 0;
+	if (issort(&stack_a) == 1)
+		return (0);
 	ft_sort(&stack_a, &stack_b);
-	lst_free(stack_a,stack_b);
-
+	lst_free(stack_a, stack_b);
 	return (0);
 }
 // __attribute__((destructor))

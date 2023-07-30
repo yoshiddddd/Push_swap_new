@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   lst_utils.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 17:50:13 by kyoshida          #+#    #+#             */
-/*   Updated: 2023/07/29 11:11:17 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 15:59:17 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_list	*ft_lstnew(int  data)
+t_list	*ft_lstnew(int data)
 {
 	t_list	*tmp;
 
@@ -41,8 +41,9 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 int	ft_lstsize(t_list **lst)
 {
-	int	i;
-	t_list *tmp;
+	int		i;
+	t_list	*tmp;
+
 	tmp = *lst;
 	i = 0;
 	while (tmp != NULL)

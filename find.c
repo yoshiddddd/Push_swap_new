@@ -3,37 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   find.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/24 19:43:46 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2023/07/29 11:10:58 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/30 13:52:38 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int find_min_index(t_list **stack, int min)
+int	find_min_index(t_list **stack, int min)
 {
-    int count;
-    t_list *tmp;
-    count = 1;
-    tmp = *stack;
-    while(tmp->data!=min && count<ft_lstsize(&tmp))
-    {
-        count++;
-        tmp = tmp->next;   
-    }
-    return count;
-}
-
-t_list	*find_min_rotate(t_list **stack, int min)
-{
+	int		count;
 	t_list	*tmp;
 
+	count = 1;
 	tmp = *stack;
-        while(tmp->data>min)
-            ra_command(&tmp);
-	return (tmp);
+	while (tmp->data != min && count < ft_lstsize(&tmp))
+	{
+		count++;
+		tmp = tmp->next;
+	}
+	return (count);
+}
+
+void	find_min_rotate(t_list **stack, int min)
+{
+	while ((*stack)->data > min)
+		ra_command(stack);
 }
 
 int	find_min(t_list **stack)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 19:23:50 by kyoshida          #+#    #+#             */
-/*   Updated: 2023/07/25 08:06:51 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 15:58:06 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_sort(t_list **stack_a, t_list **stack_b)
 {
-	if(ft_lstsize(stack_a) == 1)
+	if (ft_lstsize(stack_a) == 1)
 		return ;
 	else if (ft_lstsize(stack_a) == 2)
 	{
@@ -27,8 +27,8 @@ void	ft_sort(t_list **stack_a, t_list **stack_b)
 		sort_size4(stack_a, stack_b);
 	else if (ft_lstsize(stack_a) == 5)
 		sort_size5(stack_a, stack_b);
-	else if(ft_lstsize(stack_a) < 120)
-		big_sort(stack_a, stack_b,18);
+	else if (ft_lstsize(stack_a) < 120)
+		big_sort(stack_a, stack_b, 18);
 	else
-		big_sort(stack_a, stack_b,50);
+		big_sort(stack_a, stack_b, 50);
 }

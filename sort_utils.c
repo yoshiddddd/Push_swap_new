@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   sort_utils.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/14 18:19:19 by kyoshida          #+#    #+#             */
-/*   Updated: 2023/07/24 20:11:38 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 15:57:46 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
 
 static int	*bubble_sort(t_list **stack, int *num)
 {
@@ -38,10 +37,11 @@ static int	*bubble_sort(t_list **stack, int *num)
 	return (num);
 }
 
-static void pressnum_in(t_list **stack,int *num)
+static void	pressnum_in(t_list **stack, int *num)
 {
-	t_list *tmp;
-	int i;
+	t_list	*tmp;
+	int		i;
+
 	tmp = *stack;
 	while (tmp != NULL)
 	{
@@ -74,7 +74,7 @@ int	num_press(t_list **stack)
 		i++;
 	}
 	num = bubble_sort(stack, num);
-	pressnum_in(stack,num);
+	pressnum_in(stack, num);
 	free(num);
 	return (0);
 }

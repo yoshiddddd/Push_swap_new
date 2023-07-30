@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rev_rotate_command.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoshidakazushi <yoshidakazushi@student.    +#+  +:+       +#+        */
+/*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 20:28:36 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2023/07/29 11:12:01 by yoshidakazu      ###   ########.fr       */
+/*   Updated: 2023/07/29 15:59:36 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int	ft_rev_rotate(t_list **stack)
 	flast = ft_lstfrontlast(*stack);
 	last = flast->next;
 	last->next = now;
-    *stack = last;
+	*stack = last;
 	flast->next = NULL;
 	return (0);
 }

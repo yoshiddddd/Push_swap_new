@@ -6,7 +6,7 @@
 /*   By: kyoshida <kyoshida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 23:21:45 by yoshidakazu       #+#    #+#             */
-/*   Updated: 2023/07/14 16:56:50 by kyoshida         ###   ########.fr       */
+/*   Updated: 2023/07/29 15:59:03 by kyoshida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list *tmp;
+	t_list	*tmp;
+
 	tmp = lst;
 	if (!tmp)
 		return (NULL);
@@ -23,11 +24,12 @@ t_list	*ft_lstlast(t_list *lst)
 	return (tmp);
 }
 
-t_list	*ft_lstfrontlast(t_list	*lst)
+t_list	*ft_lstfrontlast(t_list *lst)
 {
-	t_list *tmp;
+	t_list	*tmp;
+
 	tmp = lst;
-		if (!tmp)
+	if (!tmp)
 		return (NULL);
 	while (tmp->next->next != NULL)
 		tmp = tmp->next;
